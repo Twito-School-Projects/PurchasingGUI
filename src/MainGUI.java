@@ -44,6 +44,20 @@ public class MainGUI extends javax.swing.JFrame {
         ItemQuantity1 = new javax.swing.JLabel();
         ItemPrice1 = new javax.swing.JLabel();
         ItemName1 = new javax.swing.JLabel();
+        ItemPanel2 = new javax.swing.JPanel();
+        ItemIcon2 = new javax.swing.JLabel();
+        ItemQtyDecreaseButton2 = new javax.swing.JButton();
+        ItemQtyIncreaseButton2 = new javax.swing.JButton();
+        ItemQuantity2 = new javax.swing.JLabel();
+        ItemPrice2 = new javax.swing.JLabel();
+        ItemName2 = new javax.swing.JLabel();
+        ItemPanel3 = new javax.swing.JPanel();
+        ItemIcon3 = new javax.swing.JLabel();
+        ItemQtyDecreaseButton3 = new javax.swing.JButton();
+        ItemQtyIncreaseButton3 = new javax.swing.JButton();
+        ItemQuantity3 = new javax.swing.JLabel();
+        ItemPrice3 = new javax.swing.JLabel();
+        ItemName3 = new javax.swing.JLabel();
         ItemPanel4 = new javax.swing.JPanel();
         ItemIcon4 = new javax.swing.JLabel();
         ItemQtyDecreaseButton4 = new javax.swing.JButton();
@@ -58,20 +72,6 @@ public class MainGUI extends javax.swing.JFrame {
         ItemQuantity5 = new javax.swing.JLabel();
         ItemPrice5 = new javax.swing.JLabel();
         ItemName5 = new javax.swing.JLabel();
-        ItemPanel6 = new javax.swing.JPanel();
-        ItemIcon6 = new javax.swing.JLabel();
-        ItemQtyDecreaseButton6 = new javax.swing.JButton();
-        ItemQtyIncreaseButton6 = new javax.swing.JButton();
-        ItemQuantity6 = new javax.swing.JLabel();
-        ItemPrice6 = new javax.swing.JLabel();
-        ItemName6 = new javax.swing.JLabel();
-        ItemPanel7 = new javax.swing.JPanel();
-        ItemIcon7 = new javax.swing.JLabel();
-        ItemQtyDecreaseButton7 = new javax.swing.JButton();
-        ItemQtyIncreaseButton7 = new javax.swing.JButton();
-        ItemQuantity7 = new javax.swing.JLabel();
-        ItemPrice7 = new javax.swing.JLabel();
-        ItemName7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -198,7 +198,7 @@ public class MainGUI extends javax.swing.JFrame {
         ItemQuantity1.setText("1");
 
         ItemPrice1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        ItemPrice1.setText("$20.99");
+        ItemPrice1.setText("$25.99");
 
         ItemName1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         ItemName1.setText("Forever Aloe Vera Gel");
@@ -238,9 +238,129 @@ public class MainGUI extends javax.swing.JFrame {
                 .addComponent(ItemName1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))
         );
 
+        ItemPanel2.setPreferredSize(new java.awt.Dimension(100, 70));
+
+        ItemIcon2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Soothing-Cleanser-3606000463660-SkinCeuticals__1_-removebg-preview.png"))); // NOI18N
+        ItemIcon2.setText("jLabel12");
+
+        ItemQtyDecreaseButton2.setText("-");
+        ItemQtyDecreaseButton2.setBorderPainted(false);
+        ItemQtyDecreaseButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemQtyDecreaseButton2ActionPerformed(evt);
+            }
+        });
+
+        ItemQtyIncreaseButton2.setText("+");
+        ItemQtyIncreaseButton2.setBorderPainted(false);
+
+        ItemQuantity2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ItemQuantity2.setText("1");
+
+        ItemPrice2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        ItemPrice2.setText("$55.00");
+
+        ItemName2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ItemName2.setText("SkinCeuticals Soothing Cleanser");
+
+        javax.swing.GroupLayout ItemPanel2Layout = new javax.swing.GroupLayout(ItemPanel2);
+        ItemPanel2.setLayout(ItemPanel2Layout);
+        ItemPanel2Layout.setHorizontalGroup(
+            ItemPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ItemPanel2Layout.createSequentialGroup()
+                .addComponent(ItemIcon2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 351, Short.MAX_VALUE)
+                .addComponent(ItemQtyDecreaseButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ItemQuantity2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ItemQtyIncreaseButton2)
+                .addGap(71, 71, 71)
+                .addComponent(ItemPrice2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
+            .addGroup(ItemPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ItemPanel2Layout.createSequentialGroup()
+                    .addGap(155, 155, 155)
+                    .addComponent(ItemName2, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(322, Short.MAX_VALUE)))
+        );
+        ItemPanel2Layout.setVerticalGroup(
+            ItemPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ItemPanel2Layout.createSequentialGroup()
+                .addGroup(ItemPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ItemIcon2)
+                    .addComponent(ItemQtyDecreaseButton2)
+                    .addComponent(ItemQtyIncreaseButton2)
+                    .addComponent(ItemQuantity2)
+                    .addComponent(ItemPrice2))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(ItemPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(ItemName2, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))
+        );
+
+        ItemPanel3.setPreferredSize(new java.awt.Dimension(100, 70));
+
+        ItemIcon3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/d8d37cd2-a317-4e9f-b26f-3cc246bbca5a_1.63d3f3502f700a540ca70668ec1e3c76-2390733872-removebg-preview (1).png"))); // NOI18N
+        ItemIcon3.setText("jLabel12");
+
+        ItemQtyDecreaseButton3.setText("-");
+        ItemQtyDecreaseButton3.setBorderPainted(false);
+        ItemQtyDecreaseButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemQtyDecreaseButton3ActionPerformed(evt);
+            }
+        });
+
+        ItemQtyIncreaseButton3.setText("+");
+        ItemQtyIncreaseButton3.setBorderPainted(false);
+
+        ItemQuantity3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ItemQuantity3.setText("1");
+
+        ItemPrice3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        ItemPrice3.setText("$6.97");
+
+        ItemName3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        ItemName3.setText("Head And Shoulders Shampoo");
+
+        javax.swing.GroupLayout ItemPanel3Layout = new javax.swing.GroupLayout(ItemPanel3);
+        ItemPanel3.setLayout(ItemPanel3Layout);
+        ItemPanel3Layout.setHorizontalGroup(
+            ItemPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ItemPanel3Layout.createSequentialGroup()
+                .addComponent(ItemIcon3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 351, Short.MAX_VALUE)
+                .addComponent(ItemQtyDecreaseButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ItemQuantity3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ItemQtyIncreaseButton3)
+                .addGap(71, 71, 71)
+                .addComponent(ItemPrice3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
+            .addGroup(ItemPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ItemPanel3Layout.createSequentialGroup()
+                    .addGap(155, 155, 155)
+                    .addComponent(ItemName3, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(350, Short.MAX_VALUE)))
+        );
+        ItemPanel3Layout.setVerticalGroup(
+            ItemPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ItemPanel3Layout.createSequentialGroup()
+                .addGroup(ItemPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ItemIcon3)
+                    .addComponent(ItemQtyDecreaseButton3)
+                    .addComponent(ItemQtyIncreaseButton3)
+                    .addComponent(ItemQuantity3)
+                    .addComponent(ItemPrice3))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(ItemPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(ItemName3, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))
+        );
+
         ItemPanel4.setPreferredSize(new java.awt.Dimension(100, 70));
 
-        ItemIcon4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/497718-341920643 (1).png"))); // NOI18N
+        ItemIcon4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/thayers-alcohol-free-rose-petal-witch-hazel-facial-toner-49870914-removebg-preview (1).png"))); // NOI18N
         ItemIcon4.setText("jLabel12");
 
         ItemQtyDecreaseButton4.setText("-");
@@ -258,10 +378,10 @@ public class MainGUI extends javax.swing.JFrame {
         ItemQuantity4.setText("1");
 
         ItemPrice4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        ItemPrice4.setText("$20.99");
+        ItemPrice4.setText("$10.95");
 
-        ItemName4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ItemName4.setText("Forever Aloe Vera Gel");
+        ItemName4.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        ItemName4.setText("Thayers Alcohol-Free Witch Hazel Facial Toner");
 
         javax.swing.GroupLayout ItemPanel4Layout = new javax.swing.GroupLayout(ItemPanel4);
         ItemPanel4.setLayout(ItemPanel4Layout);
@@ -281,8 +401,8 @@ public class MainGUI extends javax.swing.JFrame {
             .addGroup(ItemPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(ItemPanel4Layout.createSequentialGroup()
                     .addGap(155, 155, 155)
-                    .addComponent(ItemName4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(350, Short.MAX_VALUE)))
+                    .addComponent(ItemName4)
+                    .addContainerGap(304, Short.MAX_VALUE)))
         );
         ItemPanel4Layout.setVerticalGroup(
             ItemPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -300,7 +420,7 @@ public class MainGUI extends javax.swing.JFrame {
 
         ItemPanel5.setPreferredSize(new java.awt.Dimension(100, 70));
 
-        ItemIcon5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/497718-341920643 (1).png"))); // NOI18N
+        ItemIcon5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/094d2441-ab91-4030-85cb-7049c4b1026c.b0db4b18af0aafb85b9ecb2dd0189e50-1510936040-removebg-preview (1).png"))); // NOI18N
         ItemIcon5.setText("jLabel12");
 
         ItemQtyDecreaseButton5.setText("-");
@@ -318,10 +438,10 @@ public class MainGUI extends javax.swing.JFrame {
         ItemQuantity5.setText("1");
 
         ItemPrice5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        ItemPrice5.setText("$20.99");
+        ItemPrice5.setText("$209.99");
 
         ItemName5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ItemName5.setText("Forever Aloe Vera Gel");
+        ItemName5.setText("Oral-B Genius X 10000 Toothbrush");
 
         javax.swing.GroupLayout ItemPanel5Layout = new javax.swing.GroupLayout(ItemPanel5);
         ItemPanel5.setLayout(ItemPanel5Layout);
@@ -341,8 +461,8 @@ public class MainGUI extends javax.swing.JFrame {
             .addGroup(ItemPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(ItemPanel5Layout.createSequentialGroup()
                     .addGap(155, 155, 155)
-                    .addComponent(ItemName5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(350, Short.MAX_VALUE)))
+                    .addComponent(ItemName5, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(318, Short.MAX_VALUE)))
         );
         ItemPanel5Layout.setVerticalGroup(
             ItemPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -356,126 +476,6 @@ public class MainGUI extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(ItemPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(ItemName5, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))
-        );
-
-        ItemPanel6.setPreferredSize(new java.awt.Dimension(100, 70));
-
-        ItemIcon6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/497718-341920643 (1).png"))); // NOI18N
-        ItemIcon6.setText("jLabel12");
-
-        ItemQtyDecreaseButton6.setText("-");
-        ItemQtyDecreaseButton6.setBorderPainted(false);
-        ItemQtyDecreaseButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ItemQtyDecreaseButton6ActionPerformed(evt);
-            }
-        });
-
-        ItemQtyIncreaseButton6.setText("+");
-        ItemQtyIncreaseButton6.setBorderPainted(false);
-
-        ItemQuantity6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ItemQuantity6.setText("1");
-
-        ItemPrice6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        ItemPrice6.setText("$20.99");
-
-        ItemName6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ItemName6.setText("Forever Aloe Vera Gel");
-
-        javax.swing.GroupLayout ItemPanel6Layout = new javax.swing.GroupLayout(ItemPanel6);
-        ItemPanel6.setLayout(ItemPanel6Layout);
-        ItemPanel6Layout.setHorizontalGroup(
-            ItemPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ItemPanel6Layout.createSequentialGroup()
-                .addComponent(ItemIcon6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 351, Short.MAX_VALUE)
-                .addComponent(ItemQtyDecreaseButton6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ItemQuantity6, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ItemQtyIncreaseButton6)
-                .addGap(71, 71, 71)
-                .addComponent(ItemPrice6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
-            .addGroup(ItemPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(ItemPanel6Layout.createSequentialGroup()
-                    .addGap(155, 155, 155)
-                    .addComponent(ItemName6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(350, Short.MAX_VALUE)))
-        );
-        ItemPanel6Layout.setVerticalGroup(
-            ItemPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ItemPanel6Layout.createSequentialGroup()
-                .addGroup(ItemPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ItemIcon6)
-                    .addComponent(ItemQtyDecreaseButton6)
-                    .addComponent(ItemQtyIncreaseButton6)
-                    .addComponent(ItemQuantity6)
-                    .addComponent(ItemPrice6))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(ItemPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(ItemName6, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))
-        );
-
-        ItemPanel7.setPreferredSize(new java.awt.Dimension(100, 70));
-
-        ItemIcon7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/497718-341920643 (1).png"))); // NOI18N
-        ItemIcon7.setText("jLabel12");
-
-        ItemQtyDecreaseButton7.setText("-");
-        ItemQtyDecreaseButton7.setBorderPainted(false);
-        ItemQtyDecreaseButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ItemQtyDecreaseButton7ActionPerformed(evt);
-            }
-        });
-
-        ItemQtyIncreaseButton7.setText("+");
-        ItemQtyIncreaseButton7.setBorderPainted(false);
-
-        ItemQuantity7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ItemQuantity7.setText("1");
-
-        ItemPrice7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        ItemPrice7.setText("$20.99");
-
-        ItemName7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ItemName7.setText("Forever Aloe Vera Gel");
-
-        javax.swing.GroupLayout ItemPanel7Layout = new javax.swing.GroupLayout(ItemPanel7);
-        ItemPanel7.setLayout(ItemPanel7Layout);
-        ItemPanel7Layout.setHorizontalGroup(
-            ItemPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ItemPanel7Layout.createSequentialGroup()
-                .addComponent(ItemIcon7, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 351, Short.MAX_VALUE)
-                .addComponent(ItemQtyDecreaseButton7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ItemQuantity7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ItemQtyIncreaseButton7)
-                .addGap(71, 71, 71)
-                .addComponent(ItemPrice7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
-            .addGroup(ItemPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(ItemPanel7Layout.createSequentialGroup()
-                    .addGap(155, 155, 155)
-                    .addComponent(ItemName7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(350, Short.MAX_VALUE)))
-        );
-        ItemPanel7Layout.setVerticalGroup(
-            ItemPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ItemPanel7Layout.createSequentialGroup()
-                .addGroup(ItemPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ItemIcon7)
-                    .addComponent(ItemQtyDecreaseButton7)
-                    .addComponent(ItemQtyIncreaseButton7)
-                    .addComponent(ItemQuantity7)
-                    .addComponent(ItemPrice7))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(ItemPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(ItemName7, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -496,10 +496,10 @@ public class MainGUI extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ItemPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ItemPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ItemPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ItemPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ItemPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ItemPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ItemPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(ItemPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 705, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -516,13 +516,13 @@ public class MainGUI extends javax.swing.JFrame {
                 .addGap(48, 48, 48)
                 .addComponent(ItemPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ItemPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ItemPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ItemPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ItemPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ItemPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ItemPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -538,6 +538,14 @@ public class MainGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ItemQtyDecreaseButton1ActionPerformed
 
+    private void ItemQtyDecreaseButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ItemQtyDecreaseButton2ActionPerformed
+
+    private void ItemQtyDecreaseButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ItemQtyDecreaseButton3ActionPerformed
+
     private void ItemQtyDecreaseButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ItemQtyDecreaseButton4ActionPerformed
@@ -545,14 +553,6 @@ public class MainGUI extends javax.swing.JFrame {
     private void ItemQtyDecreaseButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ItemQtyDecreaseButton5ActionPerformed
-
-    private void ItemQtyDecreaseButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ItemQtyDecreaseButton6ActionPerformed
-
-    private void ItemQtyDecreaseButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ItemQtyDecreaseButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -591,40 +591,40 @@ public class MainGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel ItemIcon1;
+    private javax.swing.JLabel ItemIcon2;
+    private javax.swing.JLabel ItemIcon3;
     private javax.swing.JLabel ItemIcon4;
     private javax.swing.JLabel ItemIcon5;
-    private javax.swing.JLabel ItemIcon6;
-    private javax.swing.JLabel ItemIcon7;
     private javax.swing.JLabel ItemName1;
+    private javax.swing.JLabel ItemName2;
+    private javax.swing.JLabel ItemName3;
     private javax.swing.JLabel ItemName4;
     private javax.swing.JLabel ItemName5;
-    private javax.swing.JLabel ItemName6;
-    private javax.swing.JLabel ItemName7;
     private javax.swing.JPanel ItemPanel1;
+    private javax.swing.JPanel ItemPanel2;
+    private javax.swing.JPanel ItemPanel3;
     private javax.swing.JPanel ItemPanel4;
     private javax.swing.JPanel ItemPanel5;
-    private javax.swing.JPanel ItemPanel6;
-    private javax.swing.JPanel ItemPanel7;
     private javax.swing.JLabel ItemPrice1;
+    private javax.swing.JLabel ItemPrice2;
+    private javax.swing.JLabel ItemPrice3;
     private javax.swing.JLabel ItemPrice4;
     private javax.swing.JLabel ItemPrice5;
-    private javax.swing.JLabel ItemPrice6;
-    private javax.swing.JLabel ItemPrice7;
     private javax.swing.JButton ItemQtyDecreaseButton1;
+    private javax.swing.JButton ItemQtyDecreaseButton2;
+    private javax.swing.JButton ItemQtyDecreaseButton3;
     private javax.swing.JButton ItemQtyDecreaseButton4;
     private javax.swing.JButton ItemQtyDecreaseButton5;
-    private javax.swing.JButton ItemQtyDecreaseButton6;
-    private javax.swing.JButton ItemQtyDecreaseButton7;
     private javax.swing.JButton ItemQtyIncreaseButton1;
+    private javax.swing.JButton ItemQtyIncreaseButton2;
+    private javax.swing.JButton ItemQtyIncreaseButton3;
     private javax.swing.JButton ItemQtyIncreaseButton4;
     private javax.swing.JButton ItemQtyIncreaseButton5;
-    private javax.swing.JButton ItemQtyIncreaseButton6;
-    private javax.swing.JButton ItemQtyIncreaseButton7;
     private javax.swing.JLabel ItemQuantity1;
+    private javax.swing.JLabel ItemQuantity2;
+    private javax.swing.JLabel ItemQuantity3;
     private javax.swing.JLabel ItemQuantity4;
     private javax.swing.JLabel ItemQuantity5;
-    private javax.swing.JLabel ItemQuantity6;
-    private javax.swing.JLabel ItemQuantity7;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
