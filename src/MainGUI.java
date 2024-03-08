@@ -32,9 +32,10 @@ public class MainGUI extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        CalculateButton = new javax.swing.JButton();
+        TaxesLabel = new javax.swing.JLabel();
+        SubtotalLabel = new javax.swing.JLabel();
+        TotalLabel = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         ItemPanel1 = new javax.swing.JPanel();
@@ -101,29 +102,34 @@ public class MainGUI extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Taxes");
 
-        jButton1.setBackground(new java.awt.Color(20, 20, 20));
-        jButton1.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("CALCULATE");
-        jButton1.setToolTipText("");
-        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jButton1.setBorderPainted(false);
-        jButton1.setFocusable(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        CalculateButton.setBackground(new java.awt.Color(20, 20, 20));
+        CalculateButton.setFont(new java.awt.Font("Segoe UI Light", 0, 24)); // NOI18N
+        CalculateButton.setForeground(new java.awt.Color(255, 255, 255));
+        CalculateButton.setText("CALCULATE");
+        CalculateButton.setToolTipText("");
+        CalculateButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        CalculateButton.setBorderPainted(false);
+        CalculateButton.setFocusable(false);
+        CalculateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                CalculateButtonActionPerformed(evt);
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel7.setText("$0");
+        TaxesLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        TaxesLabel.setForeground(new java.awt.Color(0, 0, 0));
+        TaxesLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        TaxesLabel.setText("$0");
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel8.setText("$0");
+        SubtotalLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        SubtotalLabel.setForeground(new java.awt.Color(0, 0, 0));
+        SubtotalLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        SubtotalLabel.setText("$0");
+
+        TotalLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        TotalLabel.setForeground(new java.awt.Color(0, 0, 0));
+        TotalLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        TotalLabel.setText("$0");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -137,19 +143,22 @@ public class MainGUI extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(TaxesLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(SubtotalLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TotalLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(CalculateButton, javax.swing.GroupLayout.DEFAULT_SIZE, 301, Short.MAX_VALUE))))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -160,15 +169,18 @@ public class MainGUI extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jLabel8))
+                    .addComponent(SubtotalLabel))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jLabel7))
+                    .addComponent(TaxesLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 258, Short.MAX_VALUE)
-                .addComponent(jLabel5)
-                .addGap(37, 37, 37)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(37, 37, 37)
+                        .addComponent(CalculateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TotalLabel))
                 .addGap(22, 22, 22))
         );
 
@@ -193,6 +205,11 @@ public class MainGUI extends javax.swing.JFrame {
 
         ItemQtyIncreaseButton1.setText("+");
         ItemQtyIncreaseButton1.setBorderPainted(false);
+        ItemQtyIncreaseButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemQtyIncreaseButton1ActionPerformed(evt);
+            }
+        });
 
         ItemQuantity1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ItemQuantity1.setText("1");
@@ -253,6 +270,11 @@ public class MainGUI extends javax.swing.JFrame {
 
         ItemQtyIncreaseButton2.setText("+");
         ItemQtyIncreaseButton2.setBorderPainted(false);
+        ItemQtyIncreaseButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemQtyIncreaseButton2ActionPerformed(evt);
+            }
+        });
 
         ItemQuantity2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ItemQuantity2.setText("1");
@@ -313,6 +335,11 @@ public class MainGUI extends javax.swing.JFrame {
 
         ItemQtyIncreaseButton3.setText("+");
         ItemQtyIncreaseButton3.setBorderPainted(false);
+        ItemQtyIncreaseButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemQtyIncreaseButton3ActionPerformed(evt);
+            }
+        });
 
         ItemQuantity3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ItemQuantity3.setText("1");
@@ -373,6 +400,11 @@ public class MainGUI extends javax.swing.JFrame {
 
         ItemQtyIncreaseButton4.setText("+");
         ItemQtyIncreaseButton4.setBorderPainted(false);
+        ItemQtyIncreaseButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemQtyIncreaseButton4ActionPerformed(evt);
+            }
+        });
 
         ItemQuantity4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ItemQuantity4.setText("1");
@@ -433,6 +465,11 @@ public class MainGUI extends javax.swing.JFrame {
 
         ItemQtyIncreaseButton5.setText("+");
         ItemQtyIncreaseButton5.setBorderPainted(false);
+        ItemQtyIncreaseButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemQtyIncreaseButton5ActionPerformed(evt);
+            }
+        });
 
         ItemQuantity5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ItemQuantity5.setText("1");
@@ -529,30 +566,87 @@ public class MainGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
+    private void increaseQuantity(javax.swing.JLabel itemQuantityLabel) {
+        int quantity = Integer.parseInt(itemQuantityLabel.getText());
+        quantity++;
+        itemQuantityLabel.setText(String.valueOf(quantity));
+    }
+    
+    private void decreaseQuantity(javax.swing.JLabel itemQuantityLabel) {
+        int quantity = Integer.parseInt(itemQuantityLabel.getText());
+        if (quantity == 0) return;
+        
+        quantity--;
+        itemQuantityLabel.setText(String.valueOf(quantity));
+    }
+    
+    private void CalculateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateButtonActionPerformed
+        final double ITEM1_COST = 25.99;
+        final double ITEM2_COST = 55.00;
+        final double ITEM3_COST = 6.97;
+        final double ITEM4_COST = 10.95;
+        final double ITEM5_COST = 209.99;
+        
+        final double ITEM1_TOTAL = Integer.parseInt(ItemQuantity1.getText()) * ITEM1_COST;
+        final double ITEM2_TOTAL = Integer.parseInt(ItemQuantity2.getText()) * ITEM2_COST;
+        final double ITEM3_TOTAL = Integer.parseInt(ItemQuantity3.getText()) * ITEM3_COST;
+        final double ITEM4_TOTAL = Integer.parseInt(ItemQuantity4.getText()) * ITEM4_COST;
+        final double ITEM5_TOTAL = Integer.parseInt(ItemQuantity5.getText()) * ITEM5_COST;
+        
+        double subtotal = ITEM1_TOTAL + ITEM2_TOTAL + ITEM3_TOTAL + ITEM4_TOTAL + ITEM5_TOTAL;
+        final double taxes = subtotal * 0.13;
+        
+        
+        SubtotalLabel.setText("$" + String.valueOf(subtotal));
+        TaxesLabel.setText("$" + String.valueOf(taxes));
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        
+        TotalLabel.setText("$" + String.valueOf(taxes + subtotal));
+    }//GEN-LAST:event_CalculateButtonActionPerformed
 
     private void ItemQtyDecreaseButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton1ActionPerformed
-        // TODO add your handling code here:
+        decreaseQuantity(ItemQuantity1);
     }//GEN-LAST:event_ItemQtyDecreaseButton1ActionPerformed
 
     private void ItemQtyDecreaseButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton2ActionPerformed
-        // TODO add your handling code here:
+        decreaseQuantity(ItemQuantity2);
+
     }//GEN-LAST:event_ItemQtyDecreaseButton2ActionPerformed
 
     private void ItemQtyDecreaseButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton3ActionPerformed
-        // TODO add your handling code here:
+        decreaseQuantity(ItemQuantity3);
+
     }//GEN-LAST:event_ItemQtyDecreaseButton3ActionPerformed
 
     private void ItemQtyDecreaseButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton4ActionPerformed
-        // TODO add your handling code here:
+        decreaseQuantity(ItemQuantity4);
+
     }//GEN-LAST:event_ItemQtyDecreaseButton4ActionPerformed
 
     private void ItemQtyDecreaseButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyDecreaseButton5ActionPerformed
-        // TODO add your handling code here:
+        decreaseQuantity(ItemQuantity5);
     }//GEN-LAST:event_ItemQtyDecreaseButton5ActionPerformed
+
+    private void ItemQtyIncreaseButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyIncreaseButton1ActionPerformed
+        increaseQuantity(ItemQuantity1);
+    }//GEN-LAST:event_ItemQtyIncreaseButton1ActionPerformed
+
+    private void ItemQtyIncreaseButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyIncreaseButton2ActionPerformed
+        increaseQuantity(ItemQuantity2);
+    }//GEN-LAST:event_ItemQtyIncreaseButton2ActionPerformed
+
+    private void ItemQtyIncreaseButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyIncreaseButton3ActionPerformed
+        increaseQuantity(ItemQuantity3);
+    }//GEN-LAST:event_ItemQtyIncreaseButton3ActionPerformed
+
+    private void ItemQtyIncreaseButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyIncreaseButton4ActionPerformed
+        increaseQuantity(ItemQuantity4);
+    }//GEN-LAST:event_ItemQtyIncreaseButton4ActionPerformed
+
+    private void ItemQtyIncreaseButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemQtyIncreaseButton5ActionPerformed
+        increaseQuantity(ItemQuantity5);
+    }//GEN-LAST:event_ItemQtyIncreaseButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -590,6 +684,7 @@ public class MainGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CalculateButton;
     private javax.swing.JLabel ItemIcon1;
     private javax.swing.JLabel ItemIcon2;
     private javax.swing.JLabel ItemIcon3;
@@ -625,7 +720,9 @@ public class MainGUI extends javax.swing.JFrame {
     private javax.swing.JLabel ItemQuantity3;
     private javax.swing.JLabel ItemQuantity4;
     private javax.swing.JLabel ItemQuantity5;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel SubtotalLabel;
+    private javax.swing.JLabel TaxesLabel;
+    private javax.swing.JLabel TotalLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -633,8 +730,6 @@ public class MainGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
